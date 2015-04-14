@@ -1,5 +1,5 @@
 <launch>
-  <arg name="arm_name" default="jaco" />
+  <arg name="arm_name" default="mico" />
 
   <rosparam command="load" file="$(find wpi_jaco_wrapper)/config/$(arg arm_name).yaml"/>
   
