@@ -38,7 +38,7 @@ JacoArmTrajectoryController::JacoArmTrajectoryController(ros::NodeHandle nh, ros
 
   // Initialize arm
   // ROS_INFO("Homing arm...");
-  MoveHome();
+  // MoveHome();
   // ROS_INFO("Done.");
   // ROS_INFO("Initializing fingers...");
   InitFingers();
