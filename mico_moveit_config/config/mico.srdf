@@ -846,6 +846,7 @@
     <disable_collisions link1="camera_link" link2="mico_link_1" reason="Never" />
     <disable_collisions link1="camera_link" link2="mico_link_base" reason="Never" />
     <disable_collisions link1="camera_link" link2="neck_tilt" reason="Default" />
+    <disable_collisions link1="camera_link" link2="neck_pan" reason="Default" />
     <disable_collisions link1="camera_link" link2="tray" reason="Never" />
     <disable_collisions link1="camera_rgb_frame" link2="camera_rgb_optical_frame" reason="Adjacent" />
     <disable_collisions link1="camera_rgb_frame" link2="kinect" reason="Never" />
