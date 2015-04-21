@@ -11,6 +11,7 @@ planner_configs:
     type: geometric::KPIECE
   RRTkConfigDefault:
     type: geometric::RRT
+    range: 2.5
   RRTConnectkConfigDefault:
     type: geometric::RRTConnect
   RRTstarkConfigDefault:
