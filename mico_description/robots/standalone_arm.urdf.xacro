@@ -15,7 +15,7 @@
 
 	<xacro:include filename="$(find mico_description)/urdf/mico_arm.urdf.xacro" />
 
-	<link name="lift_link">
+	<link name="mico_root">
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0" />
 			<geometry>
@@ -30,5 +30,5 @@
 		</collision>
 	</link>
 
-	<xacro:mico_arm parent="lift_link" xyz="0 0 0" rpy="0 0 0" />
+	<xacro:mico_arm parent="mico_root" xyz="0 0 0" rpy="0 0 0" />
 </robot>
