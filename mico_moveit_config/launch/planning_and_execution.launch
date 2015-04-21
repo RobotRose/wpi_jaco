@@ -20,12 +20,12 @@
 		 <remap from="joint_states" to="/mico_arm/joint_states" />
 	</node>
 
-<!-- 	<node name="mico_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+	<node name="mico_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
 	   <rosparam>
             source_list: ['mico_arm/joint_states']
             use_gui: false
        </rosparam>
-    </node> -->
+    </node>
 
 	<!--# The planning and execution components of MoveIt! configured to 
 	# publish the current configuration of the robot (simulated or real)
