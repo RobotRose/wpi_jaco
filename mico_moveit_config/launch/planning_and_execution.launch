@@ -13,10 +13,19 @@
 	</include>
 
 	<!-- If needed, broadcast static tf for robot root -->
-	<node pkg="tf" type="static_transform_publisher" name="virtual_link" args="0 0 0 0 0 0 mico root 100" />  
+	<!-- <node pkg="tf" type="static_transform_publisher" name="virtual_link" args="0 0 0 0 0 0 mico root 100" />   -->
 
 	<!-- Given the published joint states, publish tf for the robot links -->
-	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+	<node name="mico_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" >
+		 <remap from="joint_states" to="/mico_arm/joint_states" />
+	</node>
+
+	 <node name="mico_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+	 	<rosparam>
+            source_list: ['mico_arm/joint_states']
+            use_gui: false
+       </rosparam>
+     </node>
 
 	<!--# The planning and execution components of MoveIt! configured to 
 	# publish the current configuration of the robot (simulated or real)
