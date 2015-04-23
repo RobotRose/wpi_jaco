@@ -11,6 +11,8 @@ planner_configs:
     type: geometric::KPIECE
   RRTkConfigDefault:
     type: geometric::RRT
+    #range: 1000
+    goal_bias: 0.75
   RRTConnectkConfigDefault:
     type: geometric::RRTConnect
   RRTstarkConfigDefault:
